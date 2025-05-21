@@ -1,0 +1,48 @@
+Project Description: VHDL Code Generator
+This project is a VHDL Code Generator, designed to assist users—especially students, engineers, and researchers—in quickly generating VHDL code based on simple user inputs. The main objective of the project is to automate and simplify the process of writing VHDL code for common digital logic components, saving time and reducing human error.
+By entering specific parameters or descriptions of the desired digital logic (such as AND gates, multiplexers, flip-flops, counters, etc.), the program dynamically produces syntactically correct and ready-to-use VHDL code.
+This tool contributes to technological advancement by:
+•	Accelerating digital system design.
+•	Making VHDL more accessible to beginners.
+•	Supporting rapid prototyping and learning in FPGA-based projects.
+•	Reducing the need to manually write repetitive code.
+The tool is implemented using a user-friendly interface (e.g., command-line or graphical), where the user provides the input logic requirements, and the system outputs corresponding VHDL code. The output can be copied or directly used in simulation or synthesis tools.
+This VHDL Code Generator is a step toward smarter development environments, integrating automation with digital design education and practice.
+Help Feature (Bilingual Support)
+To make the tool more user-friendly and accessible to a wider audience, a Help button is provided in the interface. When clicked, it displays clear usage instructions in both Arabic and English, explaining how to use the generator effectively.
+This feature is especially useful for:
+•	Beginners who are new to VHDL.
+•	Arabic-speaking users who prefer guidance in their native language.
+•	Ensuring that all users understand how to input the required parameters and interpret the generated code.
+
+How the Program Works
+This VHDL Code Generator is a desktop application developed with Python and the Tkinter library. It allows users to generate VHDL code automatically based on the selected digital component and input parameters.
+Here’s how the program functions:
+1.	User Input Section:
+o	The user selects a component type (e.g., MUX, DeMUX, Decoder).
+o	Then enters the required configuration like:
+	Entity Name, Architecture Name, and optional Function/Procedure Name.
+	Component-specific parameters, such as number of inputs or data width.
+o	⚠️ All inputs must follow strict rules:
+	No spaces or special characters in names.
+	Names must begin with a letter.
+	Inputs like “number of inputs” must be powers of 2 where applicable (e.g., 2, 4, 8…).
+2.	Validation System:
+o	The program performs real-time validation for:
+	Correct naming conventions.
+	Missing or invalid fields.
+	Logical errors like non-power-of-two sizes.
+o	If the input is invalid, a message box warns the user.
+3.	Code Generation:
+o	Once valid inputs are provided, pressing “Generate Code” produces VHDL code.
+o	The code is displayed in a large editable area with line numbers.
+4.	Extra Features:
+o	Copy to Clipboard: Allows quick copying of generated code.
+o	Save to File: Stores the output as a .vhdl file.
+o	Clear Code: Clears the display area for new generation.
+5.	Help Button (Multilingual):
+o	A dedicated Help button opens a window that explains how to use the tool.
+o	The help guide is written in Arabic and English, including:
+	GUI overview
+	Examples for each component
+	Input rules and common errors
